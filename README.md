@@ -1,2 +1,2 @@
 # sudokuGame
-# output : https://ayaskanta01.github.io/sudokuGame/
+output : https://ayaskanta01.github.io/sudokuGame/
