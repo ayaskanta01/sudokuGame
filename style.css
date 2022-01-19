@@ -4,6 +4,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'poppins' , sans-serif;
 }
 
 .flex-col {
@@ -76,7 +77,7 @@ html {
 html body {
   height: 100%;
   width: 100%;
-  background-image: url("images/bg.jpg");
+  background-image: url("images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -117,7 +118,6 @@ html body #main__container #header__controls #header__header {
   width: 33.3%;
   font-size: 2rem;
   text-align: center;
-  font-family: "Recursive";
 }
 
 html body #main__container #header__controls #header__submit {
@@ -127,13 +127,14 @@ html body #main__container #header__controls #header__submit {
 }
 
 html body #main__container #header__controls #header__submit span {
+  border-radius: 0.3rem;
   border: 1px solid black;
   padding: 5px 8px;
 }
 
 html body #main__container #header__controls #header__submit span:hover {
+  border: 1px solid #27ae60;
   background-color: #27ae60;
-  border-color: #27ae60;
   color: white;
   font-weight: 400;
   cursor: pointer;
@@ -155,16 +156,17 @@ html body #main__container #dotMenu {
 html body #main__container #dotMenu > div {
   background-color: #f1f2f6;
   border: 1px solid #a4b0be;
+  border-radius: 0.3rem;
   font-family: 'Poppins';
   font-size: 1.075rem;
-  margin-bottom: 1px;
+  margin-bottom: 0.25rem;
   text-align: center;
   padding: 0.2rem 0;
   cursor: pointer;
 }
 
 html body #main__container #dotMenu > div:not(:last-child):hover {
-  background-color: #a4b0be;
+  background-color: #0097e6;
   color: white;
 }
 
@@ -190,13 +192,13 @@ html body #main__container #dotMenu #solver span:after {
 }
 
 html body #main__container #dotMenu #solver span:hover, html body #main__container #dotMenu #solver span:focus {
-  background-color: #a4b0be;
+  background-color: #0097e6;
   color: white;
 }
 
 html body #main__container #dotMenu #solver span:hover:after, html body #main__container #dotMenu #solver span:focus:after {
   content: "Solver ▶";
-  color: black;
+  color: white;
 }
 
 html body #main__container #dotMenu #solver #solverMenu {
@@ -210,16 +212,17 @@ html body #main__container #dotMenu #solver #solverMenu {
 html body #main__container #dotMenu #solver #solverMenu div {
   background-color: #f1f2f6;
   border: 1px solid #a4b0be;
+  border-radius: 0.3rem;
   font-family: 'Poppins';
   font-size: 1.075rem;
-  margin-bottom: 1px;
+  margin-bottom: 0.25rem;
   text-align: center;
   padding: 0.2rem 0;
   cursor: pointer;
 }
 
 html body #main__container #dotMenu #solver #solverMenu div:hover {
-  background-color: #a4b0be;
+  background-color: #0097e6;
   color: white;
 }
 
@@ -228,6 +231,7 @@ html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox]
   margin: 0.1rem;
   cursor: pointer;
   padding: 0.1rem;
+
 }
 
 html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox] {
@@ -240,12 +244,13 @@ html body #main__container #dotMenu #solver #solverMenu div input[type=checkbox]
   border-radius: 0.2rem;
   display: inline-block;
   width: 0.7rem;
-  height: 0.7em;
+  height: 0.6em;
   padding-left: 0.3rem;
   padding-bottom: 0.6rem;
   padding-right: 0.2rem;
   margin-right: 0.5rem;
-  vertical-align: bottom;
+  vertical-align:middle;
+  border-radius: 2rem;
   color: transparent;
   -webkit-transition: .2s;
   transition: .2s;
@@ -374,9 +379,10 @@ html body #home #selection__size .options span:first-child {
 }
 
 html body #home #selection__level .options span {
+  border-radius: 0.3rem;
   border: 1px solid black;
   padding: 0.3rem 0.5rem;
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
   cursor: pointer;
 }
 
@@ -396,8 +402,7 @@ html body #home #selection__level .options span:last-child {
 }
 
 html body #home #start {
-  font-family: 'Raleway';
-  width: 40%;
+  width: 28%;
   font-size: 2.25rem;
   position: absolute;
   bottom: 10%;
@@ -405,12 +410,15 @@ html body #home #start {
   right: 0;
   margin: 0 auto;
   cursor: pointer;
-  border: 1px solid darkcyan;
-  background-color: #44bd32;
+  border-radius:0.6rem;
+  padding-bottom: 0.4%;
+  border: 1px solid black;
+/*  background-color: #51ffb7;  */
 }
 
 html body #home #start:hover {
-  background-color: #3fac2f;
+  color: #eee;
+  background-color: #0097e6;
 }
 
 html body #home #start:active {
